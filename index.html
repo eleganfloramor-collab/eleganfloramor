@@ -4,21 +4,20 @@ HTML
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eleganfloramor — Detalles modernos que enamoran</title>
+  <title>Eleganfloramor — Detalles que enamoran y conquistan</title>
   <style>
     :root {
-      --bg: #f6f3f5;
-      --surface: #ffffff;
-      --surface-soft: #fbf7f9;
-      --ink: #23191e;
-      --muted: #5c4c54;
-      --accent: #7d2948;
-      --accent-dark: #5e1d35;
-      --accent-soft: #f3e4ea;
-      --border: #e6d7de;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --shadow: 0 12px 28px rgba(35, 25, 30, 0.06);
+      --bg-dark: #130e11;
+      --bg-card: rgba(28, 20, 25, 0.9);
+      --bg-card-hover: rgba(38, 26, 33, 0.95);
+      --text-main: #ffffff;
+      --text-soft: #dfd0d7;
+      --accent: #e14b78;
+      --accent-2: #f4a261;
+      --accent-grad: linear-gradient(135deg, #e14b78 0%, #c8285b 55%, #f4a261 135%);
+      --border: rgba(255, 255, 255, 0.14);
+      --radius: 18px;
+      --botanical-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(48,52)' stroke='%23e14b78' stroke-width='1.5' opacity='0.34'%3E%3Ccircle cx='0' cy='-14' r='8'/%3E%3Ccircle cx='13' cy='-4' r='8'/%3E%3Ccircle cx='8' cy='12' r='8'/%3E%3Ccircle cx='-8' cy='12' r='8'/%3E%3Ccircle cx='-13' cy='-4' r='8'/%3E%3Ccircle cx='0' cy='0' r='5' stroke='%23f4a261'/%3E%3C/g%3E%3Cg transform='translate(195,58)' stroke='%2368b684' stroke-width='1.5' opacity='0.32'%3E%3Cpath d='M0 24 C0 4, -18 -6, -24 -22 C-8 -22, 0 -10, 0 2'/%3E%3Cpath d='M0 24 C0 4, 18 -6, 24 -22 C8 -22, 0 -10, 0 2'/%3E%3Cpath d='M0 24 L0 -28'/%3E%3C/g%3E%3Cg transform='translate(62,190)' stroke='%23f4a261' stroke-width='1.5' opacity='0.32'%3E%3Cpath d='M0 -18 C6 -6, 18 -6, 18 2 C18 11, 9 16, 0 16 C-9 16, -18 11, -18 2 C-18 -6, -6 -6, 0 -18 Z'/%3E%3Ccircle cx='0' cy='2' r='4'/%3E%3C/g%3E%3Cg transform='translate(192,192)' stroke='%23e87ea1' stroke-width='1.5' opacity='0.32'%3E%3Cpath d='M0 0 C-12 -16, -26 -8, -18 6 C-12 16, 0 14, 0 22 C0 14, 12 16, 18 6 C26 -8, 12 -16, 0 0 Z'/%3E%3Cpath d='M0 22 L0 36' stroke='%2368b684'/%3E%3C/g%3E%3Cg transform='translate(132,124)' stroke='%237cc699' stroke-width='1.4' opacity='0.28'%3E%3Cpath d='M-18 10 Q0 -14 18 10 Q0 22 -18 10 Z'/%3E%3Cpath d='M-14 10 L14 10'/%3E%3Cpath d='M0 10 L0 -6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
 
     * {
@@ -27,198 +26,212 @@ HTML
 
     body {
       margin: 0;
-      padding: 28px 16px 48px;
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-      background: radial-gradient(circle at top right, #efe2e8 0%, var(--bg) 55%);
-      color: var(--ink);
-      line-height: 1.65;
+      background:
+        radial-gradient(circle at 85% 10%, rgba(225, 75, 120, 0.25), transparent 44%),
+        radial-gradient(circle at 12% 85%, rgba(244, 162, 97, 0.16), transparent 46%),
+        var(--botanical-bg),
+        var(--bg-dark);
+      background-size: auto, auto, 260px 260px, auto;
+      color: var(--text-main);
+      line-height: 1.6;
     }
 
-    .page {
-      max-width: 920px;
+    .wrap {
+      max-width: 1020px;
       margin: 0 auto;
+      padding: 28px 18px 60px;
     }
 
     .hero {
-      background: linear-gradient(135deg, #2d1620 0%, var(--accent) 62%, #a84569 100%);
-      color: #ffffff;
-      border-radius: var(--radius-lg);
-      padding: 40px 32px;
-      box-shadow: var(--shadow);
-      margin-bottom: 22px;
+      background: linear-gradient(145deg, rgba(36, 22, 31, 0.94), rgba(20, 13, 18, 0.94));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 44px 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.48);
     }
 
-    .badge {
+    .pill {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.16);
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      color: #fff5f8;
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
+      background: rgba(225, 75, 120, 0.2);
+      border: 1px solid rgba(244, 162, 97, 0.45);
+      color: #ffd7c2;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 6px 12px;
+      padding: 7px 14px;
       border-radius: 999px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 4vw, 2.75rem);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 5vw, 3.3rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
     }
 
-    .hero p {
-      margin: 0 0 24px;
-      max-width: 68ch;
-      color: #f9eaf0;
-      font-size: 1.04rem;
+    h1 span {
+      background: var(--accent-grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: #ffffff;
-      color: var(--accent-dark);
-      font-weight: 700;
-      font-size: 0.98rem;
+    .hero-copy {
+      margin: 0 0 28px;
+      max-width: 66ch;
+      color: var(--text-soft);
+      font-size: 1.06rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent-grad);
+      color: #ffffff;
       text-decoration: none;
-      padding: 13px 22px;
-      border-radius: 12px;
-      transition: transform 0.15s ease, background-color 0.15s ease;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 15px 28px;
+      border-radius: 14px;
+      box-shadow: 0 12px 26px rgba(225, 75, 120, 0.35);
+      transition: transform 0.15s ease, filter 0.15s ease;
     }
 
-    .btn:hover {
-      background: var(--accent-soft);
-      transform: translateY(-1px);
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      margin-bottom: 18px;
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.06);
     }
 
     .grid-3 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 18px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+      margin-bottom: 20px;
     }
 
     .card {
-      background: var(--surface);
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius);
       padding: 24px;
-      box-shadow: var(--shadow);
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      background: var(--bg-card-hover);
+      border-color: rgba(244, 162, 97, 0.35);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-2);
+      margin-bottom: 8px;
     }
 
     .card h2 {
       margin: 0 0 10px;
-      font-size: 1.15rem;
-      color: var(--accent-dark);
-      letter-spacing: -0.01em;
+      font-size: 1.25rem;
+      letter-spacing: -0.015em;
     }
 
     .card p {
       margin: 0;
-      color: var(--muted);
+      color: var(--text-soft);
       font-size: 0.96rem;
     }
 
-    .card ul {
-      margin: 10px 0 0;
-      padding-left: 18px;
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .card li {
-      margin-bottom: 6px;
-    }
-
-    .notice {
-      background: var(--surface-soft);
+    .banner {
+      background: rgba(20, 13, 18, 0.92);
       border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
-      border-radius: var(--radius-md);
+      border-left: 4px solid var(--accent-2);
+      border-radius: var(--radius);
       padding: 18px 22px;
-      color: var(--muted);
+      color: var(--text-soft);
       font-size: 0.92rem;
     }
 
-    .notice strong {
-      color: var(--ink);
+    .banner strong {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <main class="page">
+  <main class="wrap">
     <section class="hero">
-      <div class="badge">Floristería virtual · Colombia y alcance internacional</div>
-      <h1>Eleganfloramor</h1>
-      <p>
-        Detalles versátiles, tiernos, elegantes, innovadores y fuera de lo común para toda época del año.
-        Creamos propuestas pensadas para enamorar, sorprender, transmitir amor, felicidad y aprecio, y hacer
-        sentir importante a la otra persona, sin local arrendado, bajo pedido, con entrega puerta a puerta y pago al recibir.
+      <div class="pill">100% Virtual · Colombia y alcance internacional</div>
+      <h1>Eleganfloramor: <span>detalles que enamoran</span> y marcan la diferencia</h1>
+      <p class="hero-copy">
+        Propuestas versátiles, elegantes, tiernas, innovadoras y fuera de lo común para toda época del año.
+        Hechas para enamorar, sorprender, transmitir amor, felicidad y aprecio, y hacer sentir importante a quien
+        quieres —sin local arrendado, bajo pedido, con entrega puerta a puerta y pago al recibir.
       </p>
-      <a class="btn" href="http://localhost:5678" target="_blank" rel="noopener noreferrer">
+      <a class="cta-btn" href="http://localhost:5678" target="_blank" rel="noopener noreferrer">
         Pregúntale al asistente
       </a>
     </section>
 
-    <section class="grid-2">
-      <article class="card">
-        <h2>Público y ocasiones</h2>
-        <p>
-          Dirigido a personas de distintos géneros, gustos y edades (hombres, mujeres y niños) y clientes para toda clase
-          de eventos, festividades y momentos especiales —como cumpleaños, grados, matrimonios, bautizos y detalles
-          para mamás amantes de las plantas—, tanto en Colombia como con alcance internacional.
-        </p>
-      </article>
-
-      <article class="card">
-        <h2>Canal de contacto</h2>
-        <p>
-          La comunicación se gestiona mediante un canal único a través de esta página web. Los datos de contacto
-          directo se mantienen ocultos por seguridad.
-        </p>
-      </article>
-    </section>
-
     <section class="grid-3">
       <article class="card">
+        <div class="tag">Línea 01 · Bajo pedido</div>
         <h2>Arreglos florales</h2>
         <p>
-          Composiciones elegantes y tiernas para distintos géneros y toda ocasión, realizadas bajo pedido con entrega
-          puerta a puerta y pago al recibir.
+          Diseños elegantes y creativos para distintos géneros y toda ocasión, con entrega puerta a puerta y pago al recibir.
         </p>
       </article>
 
       <article class="card">
+        <div class="tag">Línea 02 · Bajo pedido</div>
         <h2>Desayunos</h2>
         <p>
-          Opciones pensadas para sorprender y alegrar a quien amas, elaboradas bajo pedido con entrega puerta a puerta
-          y pago al recibir.
+          Detalles pensados para sorprender y sacar una sonrisa a quien amas, bajo pedido, con entrega puerta a puerta y pago al recibir.
         </p>
       </article>
 
       <article class="card">
+        <div class="tag">Línea 03 · Bajo pedido</div>
         <h2>Matas elegantes</h2>
         <p>
-          Plantas en materas lindas, elegantes y llamativas —ideales para mamás amantes de las plantas—, bajo pedido
-          con entrega puerta a puerta y pago al recibir.
+          Plantas en materas lindas, elegantes y llamativas —ideales para mamás amantes de las plantas—, con entrega puerta a puerta y pago al recibir.
         </p>
       </article>
     </section>
 
-    <aside class="notice">
-      <strong>Condiciones de servicio:</strong> Todos los pedidos se realizan bajo pedido, se entregan puerta a puerta y
+    <section class="grid-2">
+      <article class="card">
+        <div class="tag">Público y momentos</div>
+        <h2>Para quiénes y qué ocasiones</h2>
+        <p>
+          Para personas de distintos géneros, gustos y edades (hombres, mujeres y niños) y toda clase de eventos y
+          festividades —cumpleaños, grados, matrimonios, bautizos y mamás amantes de las plantas—, en Colombia y con alcance internacional.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="tag">Atención y seguridad</div>
+        <h2>Canal de contacto único</h2>
+        <p>
+          Todo contacto se realiza mediante el canal único de esta página web. Los datos de contacto directo se mantienen ocultos por seguridad.
+        </p>
+      </article>
+    </section>
+
+    <aside class="banner">
+      <strong>Condiciones de servicio:</strong> Todos los pedidos se elaboran bajo pedido, se entregan puerta a puerta y
       se pagan al recibir. Los precios, horarios, plazos y condiciones están pendientes de definir.
     </aside>
   </main>
