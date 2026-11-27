@@ -6,36 +6,140 @@ HTML
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eleganfloramor — Detalles que enamoran</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #faf7f8; color: #2b2b2b; line-height: 1.6; }
-    .contenedor { max-width: 780px; margin: 0 auto; background: #ffffff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-    h1 { color: #7a2e4d; margin-top: 0; }
-    h2 { color: #7a2e4d; margin-top: 28px; font-size: 1.2rem; }
-    .boton { display: inline-block; margin-top: 20px; padding: 14px 22px; background: #7a2e4d; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: bold; }
-    .nota { font-size: 0.92rem; color: #555555; background: #f4eff1; padding: 12px 16px; border-radius: 8px; margin-top: 16px; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      padding: 28px 16px;
+      background: linear-gradient(180deg, #fdf4f6 0%, #f8ecee 100%);
+      color: #3a252b;
+      line-height: 1.7;
+    }
+    .contenedor {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fffdfd;
+      border: 1px solid #f0d8df;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(122, 46, 77, 0.08);
+    }
+    .encabezado {
+      background: linear-gradient(135deg, #8e3557 0%, #b8587a 100%);
+      color: #fff9fb;
+      padding: 40px 32px;
+      text-align: center;
+    }
+    .subtitulo-amor {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.3rem;
+      font-weight: normal;
+    }
+    .frase-guia {
+      margin: 0 auto;
+      max-width: 580px;
+      font-style: italic;
+      font-size: 1.08rem;
+      color: #ffeef4;
+    }
+    .cuerpo {
+      padding: 32px;
+    }
+    h2 {
+      color: #8e3557;
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin: 28px 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #f3dce3;
+    }
+    h2:first-child { margin-top: 0; }
+    p, li {
+      font-family: Arial, sans-serif;
+      font-size: 0.98rem;
+      color: #3d2c32;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+    li { margin-bottom: 10px; }
+    .zona-boton {
+      margin-top: 28px;
+      text-align: center;
+      padding: 24px;
+      background: #fdf5f7;
+      border: 1px dashed #dfabb9;
+      border-radius: 14px;
+    }
+    .boton {
+      display: inline-block;
+      padding: 15px 28px;
+      background: #8e3557;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 6px 16px rgba(142, 53, 87, 0.25);
+    }
+    .boton:hover { background: #732744; }
+    .nota {
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #5c464d;
+      background: #faf2f4;
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-top: 24px;
+      border-left: 4px solid #b8587a;
+    }
   </style>
 </head>
 <body>
   <div class="contenedor">
-    <h1>Eleganfloramor</h1>
-    <p><strong>Descripción del negocio:</strong> Emprendimiento virtual sin local arrendado, enfocado en detalles versátiles, elegantes, tiernos, innovadores y fuera de lo común para toda época del año, con entrega puerta a puerta y pago al recibir. Precios, horarios, plazos y condiciones están pendientes de definir.</p>
+    <div class="encabezado">
+      <div class="subtitulo-amor">Para enamorar, sorprender y sacar una sonrisa</div>
+      <h1>Eleganfloramor</h1>
+      <p class="frase-guia">Detalles versátiles, tiernos, elegantes e innovadores pensados para hacer sentir importante a quien amas.</p>
+    </div>
 
-    <h2>Público al que nos dirigimos</h2>
-    <p>Personas de distintos géneros, gustos y edades (hombres, mujeres y niños) y clientes para toda clase de eventos, festividades y ocasiones especiales —como cumpleaños, grados, matrimonios, bautizos y detalles para mamás amantes de las plantas—, tanto en Colombia como con alcance internacional.</p>
+    <div class="cuerpo">
+      <h2>Descripción del negocio</h2>
+      <p>Emprendimiento virtual sin local arrendado, enfocado en detalles versátiles, elegantes, tiernos, innovadores y fuera de lo común para toda época del año, con entrega puerta a puerta y pago al recibir. Precios, horarios, plazos y condiciones están pendientes de definir.</p>
 
-    <h2>Productos y servicios (bajo pedido)</h2>
-    <ul>
-      <li><strong>Arreglos florales:</strong> Para distintos géneros y toda ocasión, con entrega puerta a puerta y pago al recibir.</li>
-      <li><strong>Desayunos:</strong> Sorpresas bajo pedido con entrega puerta a puerta y pago al recibir.</li>
-      <li><strong>Matas elegantes:</strong> Plantas en materas lindas, elegantes y llamativas, ideales para mamás amantes de las plantas, con entrega puerta a puerta y pago al recibir.</li>
-    </ul>
+      <h2>Público al que nos dirigimos</h2>
+      <p>Personas de distintos géneros, gustos y edades (hombres, mujeres y niños) y clientes para toda clase de eventos, festividades y ocasiones especiales —como cumpleaños, grados, matrimonios, bautizos y detalles para mamás amantes de las plantas—, tanto en Colombia como con alcance internacional.</p>
 
-    <h2>Contacto</h2>
-    <p>Canal de comunicación único a través de esta página web. Los datos de contacto directo se mantienen ocultos por seguridad.</p>
+      <h2>Productos y servicios (bajo pedido)</h2>
+      <ul>
+        <li><strong>Arreglos florales:</strong> Para distintos géneros y toda ocasión, con entrega puerta a puerta y pago al recibir.</li>
+        <li><strong>Desayunos:</strong> Sorpresas bajo pedido con entrega puerta a puerta y pago al recibir.</li>
+        <li><strong>Matas elegantes:</strong> Plantas en materas lindas, elegantes y llamativas, ideales para mamás amantes de las plantas, con entrega puerta a puerta y pago al recibir.</li>
+      </ul>
 
-    <a class="boton" href="http://localhost:5678" target="_blank" rel="noopener noreferrer">Pregúntale al asistente</a>
+      <h2>Contacto</h2>
+      <p>Canal de comunicación único a través de esta página web. Los datos de contacto directo se mantienen ocultos por seguridad.</p>
 
-    <div class="nota">
-      Nota: Todos los pedidos se realizan bajo pedido, se entregan puerta a puerta y se pagan al recibir. Los precios, horarios, plazos y condiciones están pendientes de definir.
+      <div class="zona-boton">
+        <a class="boton" href="http://localhost:5678" target="_blank" rel="noopener noreferrer">Pregúntale al asistente</a>
+      </div>
+
+      <div class="nota">
+        Nota: Todos los pedidos se realizan bajo pedido, se entregan puerta a puerta y se pagan al recibir. Los precios, horarios, plazos y condiciones están pendientes de definir.
+      </div>
     </div>
   </div>
 </body>
